@@ -26,7 +26,6 @@ header {
   margin: 2vh 0;
 }
 
-
 .logo {
   height: 50px;
 }
@@ -56,12 +55,15 @@ div.main{
   border-radius: 10px;
 }
 
-.layovertop {
+.layover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.layover.up {
   height: 60vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
-  border-radius: 10px;
 }
 
 .title {
@@ -84,34 +86,31 @@ div.main{
   margin-bottom: 2vh;
 }
 
-.top p {
+.top p, span ~ p {
   color: grey;
 }
 
 .box {
   float: left;
+}
 
+.box > div {
+  height: 30vh;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
 }
 
 .left_image {
-  height: 30vh;
   background-image: url("../img/img-1.jpg");
-  background-size: cover;
-  border-radius: 10px;
-
 }
 .left, .right {
   width: 20%;
 }
 
 .middle_image {
-  height: 30vh;
   background-image: url("../img/banner-2.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
 }
-
 
 .middle {
   width: 56%;
@@ -119,27 +118,21 @@ div.main{
 }
 
 .right_image  {
-  height: 30vh;
   background-image: url("../img/img-3.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
 }
 
-.layover {
+.layover.bottom {
   height: 30vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
 }
+
+
 
 span {
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
-span ~ p {
-  color: grey;
-}
 
 footer {
   width: 100%;
